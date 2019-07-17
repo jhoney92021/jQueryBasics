@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>jQuery Basics!</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta charset="UTF-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script>
+            $(document).ready(function(){
+                
+                //CLICK
+                $('.body .banner:nth-child(1) button').click(function(){
+                    $(this).css('font-size','20px');
+                });//CLICK
+
+                //HIDE
+                $('.body .banner:nth-child(2) button').click(function(){
+                    $('p').hide();
+                });//HIDE
+
+                //SHOW BUTTON
+                $('.body .banner:nth-child(3) p').hide(); 
+                $('.body .banner:nth-child(3) button').click(function(){
+                    $('p').show();
+                });//SHOW BUTTON
+
+                //TOGGLE BUTTON
+                $('.body .banner:nth-child(4) button').click(function(){
+                    $('p').toggle();
+                });//TOGGLE BUTTON
+
+                //slideUp
+                $('.body .banner:nth-child(5) button').click(function(){
+                    $('p').slideUp();
+                });//SlideUp
+
+                 //slideDown
+                $('.body .banner:nth-child(6) button').click(function(){
+                    $('p').slideDown();
+                });//SlideDown
+
+                 //slideToggle
+                $('.body .banner:nth-child(7) button').click(function(){
+                    $('p').slideToggle();
+                });//SlideToggle
+
+                //fadeOut
+               $('.body .banner:nth-child(8) button').click(function(){
+                   $('p').fadeOut();
+               });//fadeOut
+
+                 //fadeIn
+                $('.body .banner:nth-child(9) button').click(function(){
+                    $('p').fadeIn();
+                });//fadeIn
+                
+                //addClass
+               $('.body .banner:nth-child(10) button').click(function(){
+                   $('.body .banner:nth-child(10) p').addClass('classToAdd');
+               });//addClass
+
+                //before
+               $('.body .banner:nth-child(11) button').click(function(){
+                   $('.body .banner:nth-child(11) p').before("FIRST TO POST!!!!!");
+               });//before
+
+                //after
+               $('.body .banner:nth-child(12) button').click(function(){
+                   $('.body .banner:nth-child(12) p').after("first... awwww nvm");
+               });//after
+
+                //append
+               $('.body .banner:nth-child(13) button').click(function(){
+                   $('.body .banner:nth-child(13) p').append("ohhh, I almost forgot!!");
+               });//append
+
+                //.html
+               $('.body .banner:nth-child(14) button').click(function(){
+                   $('.body .banner:nth-child(14) h1').html("Hyper Text Markup");
+               });//.html
+
+                //Attributes
+               $('.body .banner:nth-child(15) button').click(function(){
+                   $('.body .banner:nth-child(15) button').attr('width', '150px');
+               });//Attributes
+
+                //Values
+               $('.body .banner:nth-child(16) button').click(function(){
+                   $('.body .banner:nth-child(16) input:text').val("Picheal Thompson");
+               });//Values
+
+                //Text
+               $('.body .banner:nth-child(17) button').click(function(){
+                   $('.body .banner:nth-child(17) p').text("Picheal Thompson");
+               });//Text
+
+            });
+        </script> 
+
+   </head>
+
+   <body>
+    <div class="container">
+
+        <div class="header">
+            <h1>My jQuery basic assignment</h1>
+            <button>→</button>
+            <button>←</button>
+            <button>X</button>
+            <button>HOME</button>
+            <input type="text" placeholder="http://localhost/jQuery.html">
+            <input type="text" placeholder="search">
+
+        </div><!--header-->
+
+        <div class="body">
+            
+            <div class="banner"><!--click-->
+                <h1>Click</h1>
+                <button>Click</button>
+                <p>Click the button!</p>
+            </div><!--click-->
+
+            <div class="banner"><!--Hide-->
+                <h1>Hide</h1>
+                <button>Hide</button>                
+                <p>Hide the button by clicking!</p>
+            </div><!--Hide-->
+            
+            <div class="banner"><!--Show-->
+                <h1>Show</h1>
+                <button>Show</button>
+                <p>TA-DA!</p>
+            </div><!--Show-->
+
+            <div class="banner"><!--Toggle-->
+                <h1>Toggle</h1>
+                <button>Toggle</button>
+                <p>HMMMMMM??</p>
+            </div><!--Toggle-->
+            
+            
+            <div class="banner"><!--slideUp-->
+                <h1>slideUp</h1>
+                <button>slideUp</button>
+                <p>Click the button to slideUp the p</p>                
+            </div><!--slideUp-->
+
+            <div class="banner"><!--slideDown-->
+                <h1>slideDown</h1>
+                <button>slideDown</button>
+                <p>Click the button to slideDown the p</p>                
+            </div><!--slideDown-->
+
+            <div class="banner"><!--slideToggle-->
+                <h1>Slidetoggle</h1>
+                <button>Slidetoggle</button>
+                <p>Click the button to slidetoggle the p</p>                
+            </div><!--slideToggle-->
+            
+            <div class="banner"><!--fadeOut-->
+                <h1>fadeOut</h1>
+                <button>fadeOut</button>
+                <p>Click the button to fadeOut the p</p>                
+            </div><!--fadeOut-->
+
+            <div class="banner"><!--fadeIn-->
+                <h1>fadeIn</h1>
+                <button>fadeIn</button>
+                <p>Click the button to fadeIn the p</p>                
+            </div><!--fadeIn-->
+
+            <div class="banner"><!--addClass-->
+                <h1>AddClass</h1>
+                <button>Addclass</button>
+                <p>Click the button to add class 'classToAdd' to this paragraph</p>
+            </div><!--addClass-->
+
+            <div class="banner"><!--before-->
+                <h1>before</h1>
+                <button>before</button>
+                <p>Click the button to BE THE FIRST TO POST!!</p>
+            </div><!--before-->
+
+            <div class="banner"><!--after-->
+                <h1>after</h1>
+                <button>after</button>
+                <p>Click the button to unfortunately be the last to post...</p>
+
+            </div><!--after-->
+            
+            <div class="banner"><!--append-->
+                <h1>Append</h1>
+                <button>Append</button>
+                <p>Click the button to append a new paragraph!</p>
+                
+            </div><!--append-->
+
+            <div class="banner"><!--.html-->
+                <h1>.html</h1>
+                <button>.html</button>
+                <p>Click the button to .html a new paragraph!</p>
+                
+            </div><!--.html-->
+
+            <div class="banner"><!--Attributes-->
+                <h1>Attributes</h1>
+                <button>Attributes</button>
+                <p>Click the button to change the Attributes of Button!</p>
+                
+            </div><!--Attributes-->
+            
+            <div class="banner"><!--Values-->
+                <h1>Values</h1>
+                <button>Values</button>
+                <p>Name: <input type="text" placeholder="Valuable NameHolder" ></p>
+                
+            </div><!--Values-->
+
+            <div class="banner"><!--Text-->
+                <h1>Text</h1>
+                <button>Text</button>
+                <p>Who is the brother of new anchor Micheal Thompson?</p>
+                
+            </div><!--Text-->
+            
+
+            <h5>//</h5>
+
+        </div><!--body-->
+
+        
+
+    </div><!--container-->
+
+   </body>
+</html>

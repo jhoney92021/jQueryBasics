@@ -1,0 +1,113 @@
+*{
+	outline: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.container{
+	/* outline: 4px solid black; */
+    height: auto; width: 970px;
+}
+
+	.header{
+		/* outline: 2px solid red;		 */
+		height: 170px; width: 970px;
+		display: inline-block;
+		vertical-align: top;
+		background-color: gray;
+	}
+		.header h1{	
+			/* outline: 2px solid purple;		 */
+			height: 40px; width: 970px;
+			display: block;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		.header button{
+			/* outline: 2px solid blue;		 */
+			height: 40px; width: 40px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.header input{
+			/* outline: 2px solid green;		 */
+			height: 40px; width: 200px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+			.header input, button{
+				margin-left:40px;
+			}
+
+	.body{
+		/* outline: 9px solid green;		 */
+		height: auto; width: 970px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+
+				.banner{
+					/* outline: 3px solid yellow;		 */
+					height: 230px; width: 970px;
+					display: inline-block;
+					vertical-align: top;
+				}
+					.banner h1{
+						/* outline: 3px solid red;		 */
+						height: 75px; width: 970px;
+						display: block;
+						text-align: center;
+						font-size: 60px;
+						margin-bottom: 50px;
+					}					
+						
+
+					.banner button{
+						/* outline: 3px solid green;		 */
+						height: 40px; width: 100px;
+						display: inline-block;
+						vertical-align: top;
+						box-shadow: 5px 5px black;
+					}
+
+					.banner p{
+						/* outline: 3px solid yellow;		 */
+						height: 90px; width: 700px;
+						display: inline-block;
+						vertical-align: top;
+						margin-left: 30px;
+					}
+
+
+
+				/* banner */
+
+		.body h5{
+			/* outline: 3px solid blue;		 */
+			height: 50px; width: 970px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: right;
+			background-color: gray;
+			font-size: 50px;
+			color:black;
+
+		}
+
+	/* body */
+
+	/* ClassLibrary */
+
+		.classToAdd{
+			outline: 3px solid blue;	
+			background-color: red;
+			color:white;
+		}
+
+
+	/* ClassLibrary */
+
+
